@@ -8,6 +8,6 @@ sales list
 sales list
 <br>
 {% for obj in qs %}
-    {{obj.transaction_id}}
+<a href="{{obj.get_absolute_url}}">{{obj.transaction_id}}</a>
 {% endfor %}
 {% endblock content %}
